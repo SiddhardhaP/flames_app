@@ -2,6 +2,7 @@ from fastapi import FastAPI, Form, Request, HTTPException
 from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from collections import Counter
+from typing import Tuple
 import re
 
 app = FastAPI(title="FLAMES Game")
@@ -9,7 +10,7 @@ app = FastAPI(title="FLAMES Game")
 templates = Jinja2Templates(directory="templates")
 
 
-def validate_names(name1: str, name2: str) -> tuple[str, str]:
+def validate_names(name1: str, name2: str) -> Tuple[str, str]:
     """Validate and sanitize input names."""
     # Remove extra whitespace
     name1 = name1.strip()

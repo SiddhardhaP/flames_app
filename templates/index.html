@@ -996,17 +996,19 @@
     });
 
     // Save current result to history when page loads with result
+    // eslint-disable-next-line
     {% if result %}
     window.addEventListener('load', function() {
         const name1 = '{{ name1 }}';
         const name2 = '{{ name2 }}';
-        const result = '{{ result.result }}';
-        if (name1 && name2 && result) {
-            saveToHistory(name1, name2, result);
+        const resultText = '{{ result.result }}';
+        if (name1 && name2 && resultText) {
+            saveToHistory(name1, name2, resultText);
         }
         // Check for duplicate after saving
         setTimeout(checkDuplicate, 200);
     });
+    // eslint-disable-next-line
     {% else %}
     // Load history when page loads without result
     window.addEventListener('load', function() {
@@ -1015,6 +1017,7 @@
         // Check for duplicate on page load
         setTimeout(checkDuplicate, 200);
     });
+    // eslint-disable-next-line
     {% endif %}
 </script>
 

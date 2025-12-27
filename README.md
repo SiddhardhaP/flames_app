@@ -35,7 +35,7 @@ cd flames_app
 
 2. Install dependencies:
 ```bash
-pip install fastapi uvicorn jinja2
+pip install -r requirements.txt
 ```
 
 3. Run the application:
@@ -63,6 +63,7 @@ flames_app/
 ├── main.py              # FastAPI application and FLAMES logic
 ├── templates/
 │   └── index.html      # Frontend HTML/CSS/JavaScript
+├── requirements.txt    # Python dependencies
 ├── README.md           # Project documentation
 └── .gitignore          # Git ignore file
 ```
@@ -94,11 +95,3 @@ The statistics feature shows how often each FLAMES result appears when testing 1
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Created with ❤️ for fun and learning.
