@@ -89,16 +89,4 @@ The statistics feature shows how often each FLAMES result appears when testing 1
 - Names must be non-empty
 - Minimum length validation
 - Special character filtering
-- Case-insensitive matching
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Author
-
-Created with ❤️ for fun and learning.
+- Case-insensitive matchin
