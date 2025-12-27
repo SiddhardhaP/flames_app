@@ -89,4 +89,4 @@ The statistics feature shows how often each FLAMES result appears when testing 1
 - Names must be non-empty
 - Minimum length validation
 - Special character filtering
-- Case-insensitive matchin
+- Case-insensitive matching
