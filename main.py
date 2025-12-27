@@ -3,6 +3,8 @@ from fastapi.responses import HTMLResponse, JSONResponse
 from fastapi.templating import Jinja2Templates
 from collections import Counter
 from typing import Tuple
+import os
+import uvicorn
 import re
 
 app = FastAPI(title="FLAMES Game")
@@ -181,3 +183,8 @@ async def calculate_api(name1: str = Form(...), name2: str = Form(...)):
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:
         raise HTTPException(status_code=500, detail="An unexpected error occurred")
+
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port)

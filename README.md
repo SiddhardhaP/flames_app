@@ -91,10 +91,7 @@ The statistics feature shows how often each FLAMES result appears when testing 1
 - Minimum length validation
 - Special character filtering
 - Case-insensitive matching
-<<<<<<< HEAD
 
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-=======
->>>>>>> 3fe55e394b41b80d970e10963c9ec019225cf749
